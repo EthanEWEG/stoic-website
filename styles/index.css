@@ -1,0 +1,211 @@
+.title-container{
+    background-image: url("../images/index/title-img.webp");
+}
+
+.intro-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.intro-container img{
+    max-width: 450px;
+    width: 100%;
+}
+
+.intro-text{
+    padding-right: 120px;
+}
+@media(max-width: 1360px){
+    .intro-text{
+        padding-right: 0px;
+    }
+}
+@media(max-width:1000px){
+    .intro-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .intro-container p{
+        text-align: left;
+        padding: 0px 80px;
+    }
+}
+@media(max-width: 800px){
+    .intro-container p{
+        padding: 0px 0px;
+    }
+}
+
+.intro-text h2, .why-container h2{
+    padding-bottom: 20px;
+}
+
+.why-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    gap: 80px;
+}
+
+@media(max-width: 1360px){
+    .why-container{
+        gap: 30px;
+    }
+}
+@media(max-width:1000px){
+    .why-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .why-container img {
+        order: 1; 
+    }
+    .why-container .why-text{
+        order: 2;
+    }
+    .why-container p{
+        text-align: left;
+        padding: 0px 80px;
+    }
+}
+
+@media(max-width:800px){
+    .why-container p{
+        padding: 0px 0px;
+    }
+}
+
+.quotes-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.quote-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 400px;
+    background-image: url("/images/index/quote-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 4px;
+    gap: 10px;
+}
+
+.quotes-container h3{
+    color: rgb(255, 200, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    text-shadow: 0px 0px 16px rgb(0, 0, 0), 0px 0px 10px rgba(0, 0, 0, 1);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.quotes-container h2{
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+.quotes-container p{
+    padding: 10px 20% 0px 20%;
+}
+
+@media (max-width: 1300px){
+    .quotes-container p{
+        padding: 0px 10% 0px 10%;
+    }
+}
+@media(max-width: 800px){
+    .quotes-container p{
+        padding: 0px 0% 0px 0%;
+    }
+}
+
+.arrow-left, .arrow-right {
+    font-size: 2rem; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 0px 10px;
+    z-index: 3; 
+    user-select: none;
+    cursor: pointer;
+    font-size: 4vw;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px; 
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    color:rgb(255, 200, 0);
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.arrow-left:focus-visible, .arrow-right:focus-visible {
+    color:rgb(255, 200, 0);
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.arrow-left:active, .arrow-right:active {
+    color:rgb(0, 255, 4);
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.quote-api-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#quote-btn{
+    font-family: "Libre Baskerville";
+    max-width: 180px;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(255, 200, 0);
+    box-shadow: 4px 0px 0px rgb(0, 0, 1), 4px 4px 0px rgba(0, 0, 1), 0px 4px 0px rgba(0, 0, 1);
+    border: none;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#quote-btn:hover{
+    background-color: rgb(255, 225, 0);
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    cursor: pointer;
+    border:2px solid black;
+}
+
+#quote-btn:focus-visible{
+    background-color: rgb(234, 255, 0);
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    border:2px solid black;
+}
+
+#quote-btn:active{
+    background-color: rgb(30, 255, 0);
+}

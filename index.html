@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/general.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ethan EG">
+    <title>Home | Stoicism</title>
+</head>
+<body>
+    <header>
+        <a href="#skip-start" class="skip-link">skip to content</a>
+        <img src="images/left-header.jpg" alt="Marble Statue of Plato thinking">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="people.html">Stoic People</a>
+            <a href="quiz.html">Stoic Quiz</a>
+        </nav>
+        <img src="images/right-header.jpg" alt="Marcus Aurelius on his Horse Statue ">
+    </header>
+    <main>
+        <div class="title-container">
+            <h1>Living Stoicism</h1>
+        </div>
+        <div class="content-container" id="skip-start">
+            <div class="intro-container scroll-image">
+                <img src="images/index/meditations.avif" alt="Marcus Aurelius Mediations book cover">
+                <div class="intro-text">
+                    <h2>How I discovered Stoicism</h2>
+                    <p>I struggled mentally for a large part of my life. The idea of working on my mindset never even crossed my mind - I didn't consider it something I could improve. That changed the day I stumbled across a video by Ryan Holiday, one of the most influential modern Stoics. In it, he calmly laid out some of the core principles of Stoicism and recommended Meditations by Marcus Aurelius. 
+                        <br>I picked up the book, and almost immediately began trying to apply the lessons. Of course, I couldn't master Stoicism overnight - but it didn't take long for something to click. I realized just how negative and reactive my thoughts were. I saw how much energy I spent worrying about things completely outside my control. And I realized that I could be so much happier - so much <b>better</b> - 
+                        if I committed to practicing the Stoic mindset. 
+                        <br>This website is an expression of my appreciation for Stoicism, and I hope it reaches those who need it most.
+                        </p>
+                </div>
+            </div>
+            <div class="quotes-container scroll-image">
+                <h2>My Favourite Stoic Quotes</h2>
+                <div class="quote-item">
+                    <div class="arrow-left" tabindex="0" onclick="">&#10094;</div>
+                    <h3 id="quote-text">Click Arrows For Quotes</h3>
+                    <div class="arrow-right" tabindex="0" onclick="">&#10095;</div>
+                </div>
+                <p>At my lowest point since adopting a Stoic mindset, these fundamental ideas have helped me maintain mental clarity and stillness. Throughout 2024, I've faced countless setbacks - especially a brutal series of injuries - yet every time, I reminded myself: I can either view this as wasted time and sink into despair, or I can treat this pain as an opportunity to grow; to build resilience.
+                    <br>As the first quote in this list (and my personal favorite) reminds me: “The impediment to action advances action. What stands in the way becomes the way.”
+                    <br>Stoicism doesn't eliminate pain, but it can eliminate suffering - reshaping how we face pain and turning obstacles into fuel for inner strength.
+                    </p>
+            </div>
+            <div class="why-container scroll-image">
+                <div class="why-text">
+                    <h2>Why I believe in it</h2>
+                    <p>Stoicism aims to respect all, to be kind to all, and to become the best possible version of yourself. It's a philosophy built on cultivating a powerful mind - not to overpower others, but to grow alongside them.
+                        <br>I believe in Stoicism not only because it helps me, but because it helps those around me. It teaches you to be a better listener, more respectful, less judgmental… and I could go on. It reshapes how we interact with the world - with others and with ourselves.
+                        <br>For this reason I hope it finds others who are on the same path - those who are searching to become better. Because Stoicism <b>thrives</b> in people who are always looking to grow.
+                        </p>
+                </div>
+                <img src="images/index/tree.jpg" alt="A drawing of a tree">
+            </div>
+            <div class="quote-api-container scroll-image">
+                <h1>Click for a random Stoic quote</h1>
+                <button id="quote-btn">Generate Quote</button>
+                <h3 id="quote-api-text">quote...</h3>
+                <h3 id="quote-author">author...</h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>“It's not what happens to you, but how you react to it that matters”</h2>
+        <p>Website by: Ethan Egerton-Graham</p>
+    </footer>
+    <script src="scripts/page-transitions.js"></script>
+    <script src="scripts/quotes.js"></script>
+    <script src="scripts/observer.js"></script>
+</body>
+</html>
