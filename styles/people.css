@@ -171,6 +171,12 @@
     }
 }
 
+@media(max-width: 400px){
+    .card-back{
+        padding:20px;
+    }
+}
+
 .quote-container{
     text-align: center;
     display:flex;
